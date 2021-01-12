@@ -15,7 +15,7 @@ jobs:
     env:
       RUNNER_DEBUG: 1
       environment-url: 'orgefc67cf5.crm.dynamics.com' # dev
-      user-name: $${{ secrets.username }}  
+      user-name: ${{ secrets.username }}  
 
     steps:
     - uses: actions/checkout@v2
