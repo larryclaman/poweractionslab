@@ -14,7 +14,6 @@ jobs:
     env:
       RUNNER_DEBUG: 1
       buildenvironment-url: 'https://orgfec29a56.crm.dynamics.com/'
-      prodenvironment-url: 'https://org4cb4ddf9.crm.dynamics.com/'
 
     steps:
     - uses: actions/checkout@v2
@@ -59,6 +58,8 @@ jobs:
     runs-on: windows-latest
     env:
       RUNNER_DEBUG: 1
+      prodenvironment-url: 'https://org4cb4ddf9.crm.dynamics.com/'
+
 
     steps:
     - uses: actions/checkout@v2
