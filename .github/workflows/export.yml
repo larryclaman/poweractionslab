@@ -27,7 +27,8 @@ jobs:
     - name: who-am-i action
       uses: microsoft/powerplatform-actions/who-am-i@v0
       with:
-        user-name: ${{ secrets.USERNAME }}
+        # user-name: '${{ secrets.username }}'
+        user-name: foo
         password-secret: ${{ secrets.password }}
 
     - name: export-solution action
