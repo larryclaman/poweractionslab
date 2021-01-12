@@ -22,10 +22,12 @@ jobs:
       with:
         lfs: true
 
+
+    # https://github.com/microsoft/powerplatform-actions
     - name: who-am-i action
       uses: microsoft/powerplatform-actions/who-am-i@v0
       with:
-        user-name: ${{ secrets.username }}
+        user-name: ${{ secrets.USERNAME }}
         password-secret: ${{ secrets.password }}
 
     - name: export-solution action
