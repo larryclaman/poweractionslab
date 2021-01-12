@@ -14,7 +14,7 @@ jobs:
     runs-on: windows-latest
     env:
       RUNNER_DEBUG: 1
-      environment-url: 'orgefc67cf5.crm.dynamics.com' # dev
+      environment-url: 'https://orgefc67cf5.crm.dynamics.com' # dev
       user-name: ${{ secrets.username }}  
 
     steps:
@@ -27,8 +27,8 @@ jobs:
     - name: who-am-i action
       uses: microsoft/powerplatform-actions/who-am-i@v0
       with:
-        user-name: '${{ secrets.username }}'
         environment-url: ${{ env.environment-url }}
+        user-name: '${{ secrets.username }}'
         password-secret: ${{ secrets.password }}
 
     - name: export-solution action
